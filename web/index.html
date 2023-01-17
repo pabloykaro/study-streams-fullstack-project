@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List of movie sob demand</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        font-size: 62.5%;
+      }
+      header {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding-left:1rem;
+        align-items: center;
+        gap: 2rem;
+        background-color: white;
+        padding-block: 1rem;
+      }
+      .container {
+        width: 100vw;
+        min-height: 100vh;
+        margin: 0 auto;
+        background-color: #E0E5EC;
+      }
+      button {
+        outline: none;
+        border-radius: 0.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-block: 1rem;
+        border: none;
+        font-weight: bold;
+        background-color: #ffbd00
+      }
+      header h1{
+        font-family: sans-serif;
+        font-size: 2rem;
+        border-bottom: 0.5rem;
+        border-color: #e9ecef;
+      }
+      header span{
+        font-family: sans-serif;
+        font-size: 1.5rem;
+      }
+      #mainContainer{
+        width: 100%;
+        display: flex;
+        flex:1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+      }
+      button:hover{
+        background-color:#dee2e6;
+      }
+      button:focus{
+        outline: auto;
+        border-color: black;
+        border-width: 0.1rem;
+      }
+      article{
+        display: flex;
+        width: 100%;
+        background: #EEF0F4;
+        border-radius: 0.5rem;
+        flex-direction: column;
+      }
+      .content{
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
+      }
+      .content-movie{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .content-movie > * {
+        font-family: sans-serif;
+      }
+      .img-movie{
+        border-radius: 1rem;
+      }
+      .content-movie h2{
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>List of movie sob demand</h1>
+      <button id="startFetch">Start Fetch</button>
+      <span>or</span>
+      <button id="stopFetch">Stop Fetch</button>
+    </header>
+    <div class="container">
+      <main id="mainContainer">
+
+      </main>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
